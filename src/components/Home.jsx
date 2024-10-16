@@ -1,30 +1,11 @@
-import React from "react";
-
-import About from "./About";
-import Service from "./Service";
-import Portfolio from "./Portfolio";
-import Contact from "./Contact";
-
-// export default function Home() {
-//   return (
-//     <div className='demo'>
-//       <h1>Home</h1>
-//     </div>
-//   )
-// }
-
+import React from 'react'
+import "./../assets/style.css";
+import styles from "./../assets/home.module.css";
 export default function Home() {
-  return React.createElement(
-    "div",
-    null,
-    React.createElement("h1", { className: "demo", id: "ddemo2" }, "Home"),
-    React.createElement("p",null,"lorem ipsum dolor sit amet")
-  );
-}
-
-{
-  /* <About />
-      <Service />
-      <Portfolio />
-      <Contact /> */
+  return (
+    <div className='bg-danger'>
+      <h1 className={styles.demo}>hello world</h1>
+      <p className='demo'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rem laborum fugit placeat numquam animi aliquid facilis iusto illo sapiente natus magnam obcaecati aspernatur quasi, accusantium molestias culpa repellat tempore.</p>
+    </div>
+  )
 }
